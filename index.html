@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Online Trivia</title>
+        <link rel="shortcut icon" href="quiz.png" type="image/x-icon" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div class="backdrop hidden"></div>
+        <div class="modal hidden"></div>
+
+        <h1 class="heading">Online Trivia</h1>
+        <h3 class="category__heading">SELECT A CATEGORY</h3>
+
+        <select name="" id="category">
+            <option value="arts_and_literature">Arts & Literature</option>
+            <option value="film_and_tv">Film & TV</option>
+            <option value="food_and_drink">Food & Drink</option>
+            <option value="general_knowledge">General Knowledge</option>
+            <option value="geography">Geography</option>
+            <option value="history">History</option>
+            <option value="music">Music</option>
+            <option value="science">Science</option>
+            <option value="society_and_culture">Society & Culture</option>
+            <option value="sport_and_leisure">Sport & Leisure</option>
+        </select>
+
+        <div class="quiz">
+            <div class="question">
+                <h2>Questions will appear here!!</h2>
+            </div>
+
+            <div class="options">
+                <input type="radio" name="option" id="one" />
+                <label for="one"><h4>OPTION 1</h4></label>
+                <input type="radio" name="option" id="two" />
+                <label for="two"><h4>OPTION 2</h4></label>
+                <input type="radio" name="option" id="three" />
+                <label for="three"><h4>OPTION 3</h4></label>
+                <input type="radio" name="option" id="four" />
+                <label for="four"><h4>OPTION 4</h4></label>
+            </div>
+        </div>
+
+        <button class="start">Start</button>
+        <button class="check hidden">Check Answer</button>
+        <button class="next hidden">Next</button>
+    </body>
+</html>
