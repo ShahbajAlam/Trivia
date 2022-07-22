@@ -24,6 +24,7 @@ const hideModal = () => {
 
 const showBackdrop = () => {
     backdrop.classList.remove("hidden");
+    document.body.style.overflowY = "hidden";
 };
 
 const hideBackdrop = () => {
@@ -57,7 +58,6 @@ const updateOptionsUI = (answers) => {
 
 const getQuestions = async () => {
     if (questionNumber < 10) {
-        console.log(selectedCategory);
         try {
             const data = await fetch(
                 `https://the-trivia-api.com/api/questions?categories=${selectedCategory}&limit=10`
