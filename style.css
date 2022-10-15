@@ -16,7 +16,7 @@ body {
     align-items: center;
     padding: 2rem 1rem;
     font-family: "Montserrat", sans-serif;
-    background: linear-gradient(to top, #134e5e, #71b280);
+    background: linear-gradient(to top, #d3cce3, #d9d5df);
 }
 
 body::before {
